@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="forms"> 
+        <h1>Form</h1>
+        
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name" required pattern="[A-Za-z]+" minlength="2">
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required >
+            <br>
+            <label for="phone_no">Phone No:</label><br>
+            <input type="text" name="phone_no" id="phone_no" required pattern="[0-9]{10}" title="Please Enter 10 digit number">
+            <br>
+            <button type="submit" class="sub">Submit</button>
+        </form>
+        </div>
+        <div class=" map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1076.2040450960064!2d75.86264345329458!3d30.853743331002875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a8284921e0583%3A0xb8d3b6284483a777!2sSTEP%20GNDEC!5e0!3m2!1sen!2sin!4v1737350748822!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </body>
+</html>
