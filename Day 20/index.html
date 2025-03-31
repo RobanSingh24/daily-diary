@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>JavaScript Objects</h1>
-<h2>Object Methods</h2>
-<p>A method is a function definition stored as a property value.</p>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
 
 <p id="demo"></p>
 
 <script>
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  id: 5566,
-  fullName: function() {
-    return this.firstName + " " + this.lastName;
-  }
-};
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
 
-document.getElementById("demo").innerHTML = person.fullName();
+let result = myFunction(4, 3);
+document.getElementById("demo").innerHTML = result;
 </script>
+
 </body>
 </html>

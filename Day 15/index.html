@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Output</title>
+</head>
+<body>
+    <h3>Using innerHTML</h3>
+    <p id="demo1"></p>
+    <h3>Using innerText</h3>
+    <p id="demo2"></p>
+    <h3>Using document.write()</h3>
+    <h3>Using window.alert()</h3>
+    <script>
+        document.getElementById("demo1").innerHTML = "Hello World";
+        document.getElementById("demo2").innerText = "Hello World";
+        document.write(5 + 6);
+        window.alert(5 + 6);
+    </script>
+</body>
+</html>

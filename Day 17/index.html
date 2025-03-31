@@ -8,23 +8,29 @@
 </head>
 
 <body>
-    <h2>JavaScript if .. else</h2>
-
-    <p>A time-based greeting:</p>
-
-    <p id="demo"></p>
+    <h1>Grade Calculator</h1>
+    <label for="num">Total Number out of 100:</label>
+    <input type="number" id="num" name="num">
 
     <script>
-        const time = new Date().getHours();
-        let greeting;
-        if (time < 10) {
-            greeting = "Good morning";
-        } else if (time < 20) {
-            greeting = "Good day";
-        } else {
-            greeting = "Good evening";
+        let num = prompt("Percentage", 0);
+        let text;
+        if (num == null || num == "") {
+            text = "User cancelled the prompt.";
+        } else if(num>=90){
+            text = "Grade:A";
+        } else if(num>=80){
+            text= "Grade:B";
+        } else if(num>=70){
+            text= "Grade:C";
+        } else if(num>=60){
+            text= "Grade:D";
+        } else if(num>=50){
+            text= "Grade:E";
+        } else{
+            text= "Fail"
         }
-        document.getElementById("demo").innerHTML = greeting;
+        window.alert(text);
     </script>
 </body>
 
