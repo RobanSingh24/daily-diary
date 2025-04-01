@@ -1,3 +1,2 @@
-# Day 26 (03-03-2025)
-learned about methods in javascript. Created Sum of all family members of house using nesting method objects.   
-[work](https://esingh03.github.io/Full_Stack_Training/Day%2026/index.html)
+# Day 26 (04-03-2025)
+Explored current leave management system of college.
